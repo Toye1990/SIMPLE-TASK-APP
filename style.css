@@ -143,3 +143,14 @@ button{
         padding: var(--spacing-medium);
     }
 }
+
+@media (max-width: 500px){
+    .container{
+        width: 370px;
+        height: auto;
+        border-radius: var(--spacing-medium);
+        border: 1px solid rgb(1, 224, 68);
+        box-shadow: 0 0 3px gray;
+        padding: var(--spacing-medium);
+    }
+}
