@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+:root{
+    --spacing-small: 5px;
+    --spacing-medium: 10px;
+}
+
+main{
+    padding: var(--spacing-medium);
+    height: 100vh;
+}
+
+section:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+   margin-bottom: var(--spacing-medium);
+}
+
+.heading{
+    padding: var(--spacing-medium);
+}
+
+.container{
+    width: 700px;
+    height: auto;
+    border-radius: var(--spacing-medium);
+    border: 1px solid rgb(1, 224, 68);
+    box-shadow: 0 0 3px gray;
+    padding: var(--spacing-medium);
+}
+
+.form-group{
+    display: flex;
+    gap: var(--spacing-medium);
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: var(--spacing-medium);
+}
+
+.form-control label{
+    font-size: 20px;
+    margin-bottom: var(--spacing-small);
+}
+
+.form-control input{
+    height: 30px;
+    padding-left: var(--spacing-small);
+    border-radius: var(--spacing-medium);
+}
+
+.btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.img-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.card{
+    width: 200px;
+    border: none;
+    overflow: hidden;
+    border-radius: var(--spacing-medium);
+    box-shadow: 0 0 5px gray;
+    padding: var(--spacing-small);
+}
+
+#taskDisplay{
+    margin-top: 150px;
+}
+
+.cardbody h4{
+    margin-bottom: var(--spacing-medium);
+}
+
+.cardbody{
+    padding: var(--spacing-small);
+}
+
+.para{
+    margin-bottom: var(--spacing-medium);
+    font-size: 0.8rem;
+}
+
+.btn-group{
+    display: flex;
+    gap: var(--spacing-medium);
+    cursor: pointer;
+}
+
+button{
+    flex-grow: 1;
+    height: 25px;
+    border-radius: var(--spacing-medium);
+    cursor: pointer;
+}
+
+.btn-danger{
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.btn-update{
+    background-color: rgb(43, 255, 0);
+    border: none;
+    color: white;
+}
+
+.error-alert{
+    border: 1px solid red;
+}
+
+#taskDisplay{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 379px){
+    .container{
+        width: 300px;
+        height: auto;
+        border-radius: var(--spacing-medium);
+        border: 1px solid rgb(1, 224, 68);
+        box-shadow: 0 0 3px gray;
+        padding: var(--spacing-medium);
+    }
+}
